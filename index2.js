@@ -11,6 +11,9 @@ document.getElementById('add').addEventListener('click',() => {
     let actions = row.insertCell(4)
     actions.appendChild(createDeleteButton(id++));
     document.getElementById('dayOfWeek').value = '';
+    document.getElementById('mealType').value = '';
+    document.getElementById('new-entree').value = '';
+    document.getElementById('new-sides').value = '';
 });
 
 function createDeleteButton(id) {
