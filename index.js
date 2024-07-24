@@ -1,14 +1,14 @@
 $(document).ready(function() {
     $('#add').click(function() {
-        var dayOfWeek = $('#dayOfWeek').val();
-        var mealType = $('#mealType').val();
-        var entree = $('#new-entree').val();
-        var sides = $('#new-sides').val();
+        let dayOfWeek = $('#dayOfWeek').val();
+        let mealType = $('#mealType').val();
+        let entree = $('#new-entree').val();
+        let sides = $('#new-sides').val();
 
         // Create a new table for the selected day if not already created
         if ($('#table-' + dayOfWeek).length == 0) {
             // Create a new table for the selected day
-            var newTable = $('<table class="table table-dark table-striped">' +
+            let newTable = $('<table class="table table-dark table-striped">' +
                                 '<tr>' +
                                     '<th>Day</th>' +
                                     '<th>Entree</th>' +
